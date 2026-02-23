@@ -1,0 +1,12 @@
+# Ignore everything
+*
+
+# But not these files
+!backend-standalone/**
+!gradle.properties
+!gradle/**
+!gradlew
+!gradlew.bat
+
+# Ignore backend folder (we use backend-standalone)
+backend/

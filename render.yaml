@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: heiselai-backend
+    repo: josenunez74-glitch/HeiselAi
+    rootDirectory: backend-standalone
+    buildCommand: ./gradlew shadowJar
+    startCommand: java -jar build/libs/app.jar
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: OLLAMA_URL
+        value: http://localhost:11434
