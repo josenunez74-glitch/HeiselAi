@@ -1,0 +1,12 @@
+[build]
+builder = "docker"
+dockerfile = "Dockerfile"
+
+[deploy]
+num_replicas = 1
+
+[env]
+PORT = "8080"
+OLLAMA_URL = "http://ollama:11434"
+SD_URL = "http://stablediffusion:7860"
+DEFAULT_MODEL = "llama3"
